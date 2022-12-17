@@ -12,6 +12,13 @@ header {
     justify-content: center;
 }
 
+.my-name {
+    font-size: 50px;
+    
+}
+
+
+
 header ul {
     display: flex;
     padding: 10px 10px 50px 10px;
@@ -49,7 +56,7 @@ section {
 }
 
 .hero-section {
-    margin-top: 17vh;
+    margin-top: 5vh;
     text-align:center;
 }
 
@@ -85,24 +92,20 @@ a {
 }
 
 .socials {
-    width: 100px;
-    height: 320px;
+    width: 70px;
+    height: 300px;
     background-color: #bb863b;
     border-radius: 30px 0 0 30px;
     position: fixed;
     right: 0;
-    top: 27vh;
+    top: 30vh;
 }
 
-@media only screen and (max-width: 600px) {
-.socials {
-    display: none;
-}
-}
 
 .social {
     width: 100%;
     height: 33%;
+    
 }
 
 .wave {
@@ -118,6 +121,8 @@ a {
     fill: rgb(255,255,255);
 }
 
+
+
 a:hover {
     color: #bb863b;
 }
@@ -125,24 +130,142 @@ a:hover {
 /*work page*/
 
 .work-details {
-    width: 50%;
+   flex-direction: column;
+   display: flex;    
+    width: 70%;
+    margin-bottom: 130px;
 }
 
-.work-details td {
-    padding: 30px;
+.one-project {
+    flex-direction: row;
+    display: flex
 }
+
+.project-name {
+    padding: 30px;
+    margin-top: 20px;
+}
+
+.project-description {
+    padding: 30px;
+
+}
+
+/*.project-img {
+    padding: 30px;
+   
+}
+*/
 
 @media only screen and (max-width: 600px) {
     .work-details {
         width: 80%;
     }
 
-    .work-details td {
+    .one-project {
+        flex-direction: column;
+    }
+
+    .project-name {
+        padding: 5px;
+        margin-top: 80px;
+    }
+
+    .project-description {
         padding: 5px;
     }
+
+    
+    .thumbnail { 
+        
+        top:-50px; 
+        left: 5px; 
+        display:block;
+        z-index:999; 
+        cursor: pointer; 
+        -webkit-transition-property: all; 
+        -webkit-transition-duration: 0.3s; 
+        -webkit-transition-timing-function: ease; 
+       
+    
+    }
+
+    .wave {
+    fill: rgb(0,0,0);
+    width: 100vw;
+    height: 40vh;
+    position: fixed;
+    bottom: 0;
+    left: 0;
 }
 
-/*about me*/
+    .thumbnail:hover { 
+        transform: scale(1.1);    
+       width: 50%;        
+        }
+    
+        .hero-section{            
+            display: block;
+            width: 90%;           
+            
+
+        }
+
+       
+
+        .avatar-desc {
+            display: block;
+            margin-right: 20px;
+            
+            
+           
+        }
+             
+        .whoIam {
+            display: flex;
+            flex-direction: column;
+        
+            margin-left: -10px;
+            width: 90%;
+        }
+
+        .skills-desc {            
+            display: block;
+            
+            width: 80%;           
+                              
+                       
+        }      
+
+        .subtitle-description {
+        font-size: medium;
+            color: red;
+        }
+       
+        
+        .skills-img {
+            width: 30px;
+            
+        }
+        
+
+        
+}
+
+
+.skills-img {
+    width: 50px;
+    padding: 15px;
+}
+
+.skills-desc {
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+   
+    padding-top: 30px;
+}
+
 
 .about-me {
     width: 50%;
@@ -152,11 +275,25 @@ a:hover {
     align-items: center;
 }
 
-.about-me img {
-    height: 200px;
+
+.avatar {
+    height: 150px;
     border-radius: 50%;
-    margin: 40px 10px 10px 10px;
+    margin: 40px 20px 10px 10px;
+
 }
+
+.avatar-desc {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+}
+
+.whoIam {
+    display: flex;
+    flex-direction: column;
+}
+
 .sub-pages-footer {
     position: fixed;
 }
@@ -168,6 +305,13 @@ a:hover {
     }
 }
 
+@media only screen and (max-width: 600px) {
+
+
+    .socials {
+        display: none;
+    }
+    }
 
 /* contact page */
 .form-submit {
@@ -233,12 +377,15 @@ form button {
         width: 100%;
         margin-top: 5px;
     }
+
+   
 }
 
 
-.tvImage {
+/*.tvImage {
     width: 150px;
 }
+*/
 
 .contact-icon {
     width: 20px;
@@ -265,6 +412,7 @@ form button {
 
 
 .thumbnail { 
+    margin-top: 30px;
     top:-50px; 
     left:-35px; 
     display:block; 
@@ -273,12 +421,14 @@ form button {
     -webkit-transition-property: all; 
     -webkit-transition-duration: 0.3s; 
     -webkit-transition-timing-function: ease; 
-    } 
+    width: 180px;
+}
+
+
     
    
     .thumbnail:hover { 
-    transform: scale(2.5); 
-    
+    transform: scale(1.7);      
     }
 
     .work-table {
