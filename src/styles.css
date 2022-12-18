@@ -70,16 +70,19 @@ footer {
     left: 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
+    
 }
 
 footer ul {
     display: flex;
-    padding: 30px;
+    
+    
 }
 
 .options {
     display: flex;
+    padding-left: 40px;
 }
 
 .options a {
@@ -144,10 +147,21 @@ a:hover {
 .project-name {
     padding: 30px;
     margin-top: 20px;
+   
+    width: 3rem;
 }
 
 .project-description {
     padding: 30px;
+    width: 70%;
+   
+    padding-left: 60px;
+
+}
+
+.junior-desc {
+    padding-left: 50px;
+    font-size: 2rem;
 
 }
 
@@ -230,8 +244,10 @@ a:hover {
         }
 
         .skills-desc {            
-            display: block;
             
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;            
             width: 80%;           
                               
                        
@@ -239,7 +255,7 @@ a:hover {
 
         .subtitle-description {
         font-size: medium;
-            color: red;
+           
         }
        
         
@@ -378,6 +394,35 @@ form button {
         margin-top: 5px;
     }
 
+    .work-table {
+       
+        padding-left: 80px;
+        /*margin-right: 40px;*/
+        width: 70%;
+        /*inline-size: 120px;*/
+        overflow-wrap: break-word;
+          
+    }
+
+    .experience li {
+        
+        width: 100%;
+        margin-left: 4rem;
+        margin-bottom: 40px;
+        inline-size: 250px;
+        overflow-wrap: break-word;
+   
+        
+    }
+
+    /*.work-exp {
+        font-style: italic;
+        padding-left: 10px;
+    }
+    */
+
+  
+
    
 }
 
@@ -447,3 +492,31 @@ form button {
         margin-left: 1rem;
         margin-bottom: 40px;
     }
+
+
+.soft-skills_container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+ 
+
+}
+
+.soft-skills{
+    
+    max-width: 450px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.section__tittle{
+    padding-top: .7rem;
+    margin-bottom: .25em;
+    grid-area: tittle;
+    font-size: 25px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-weight:300;
+}
+
